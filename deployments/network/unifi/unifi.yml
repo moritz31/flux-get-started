@@ -22,9 +22,8 @@ spec:
     unifiedService:
       enabled: true
       type: LoadBalancer
-      loadBalancerIP: 
-        - 192.168.178.253
+      loadBalancerIP: 192.168.178.253
       annotations:
-        - metallb.universe.tf/allow-shared-ip: unifi-svc
+        metallb.universe.tf/allow-shared-ip: unifi-svc
     persistence:
       storageClass: openebs-jiva-default
