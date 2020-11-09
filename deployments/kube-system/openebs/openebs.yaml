@@ -32,7 +32,7 @@ spec:
       image: openebs/admission-server-arm64
       imageTag: 2.2.0
     localprovisioner:
-      image: provisioner-localpv-arm64
+      image: openebs/provisioner-localpv-arm64
       imageTag: 2.2.0
     cstor:
       pool:
