@@ -51,3 +51,6 @@ spec:
       monitoring:
         image: openebs/m-exporter-arm64
         imageTag: 2.2.0
+    jiva:
+      image: openebs/jiva-arm64
+      imageTag: 2.2.0
