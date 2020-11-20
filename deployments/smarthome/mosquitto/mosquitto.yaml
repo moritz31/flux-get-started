@@ -1,0 +1,21 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: mosquitto
+  namespace: smarthome
+  annotations:
+    fluxcd.io/ignore: "false"
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: mosquitto
+  rollback:
+    enable: true
+  chart:
+    repository: https://storage.googleapis.com/t3n-helm-charts
+    name: mosquitto
+    version: 2.2.0
+  values:
+    service:
+      type: LoadBalancer
+      loadBalancerIP: 192.168.178.252
