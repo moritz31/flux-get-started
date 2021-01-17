@@ -13,44 +13,44 @@ spec:
   chart:
     repository: https://openebs.github.io/charts
     name: openebs
-    version: 2.2.1
+    version: 2.5.0
   values:
     apiserver:
       image: openebs/m-apiserver-arm64
-      imageTag: 2.2.0
+      imageTag: 2.5.0
     provisioner:
       image: openebs/openebs-k8s-provisioner-arm64
-      imageTag: 2.2.0
+      imageTag: 2.5.0
     snapshotOperator:
       provisioner:
         image: openebs/snapshot-provisioner-arm64
-        imageTag: 2.2.0
+        imageTag: 2.5.0
       controller:
         image: openebs/snapshot-controller-arm64
-        imageTag: 2.2.0
+        imageTag: 2.5.0
     webhook:
       image: openebs/admission-server-arm64
-      imageTag: 2.2.0
+      imageTag: 2.5.0
     localprovisioner:
       image: openebs/provisioner-localpv-arm64
-      imageTag: 2.2.0
+      imageTag: 2.5.0
     cstor:
       pool:
         image: openebs/cstor-pool-arm64
-        imageTag: 2.2.0
+        imageTag: 2.5.0
       poolMgmt:
         image: openebs/cstor-pool-mgmt-arm64
-        imageTag: 2.2.0
+        imageTag: 2.5.0
       target:
         image: openebs/cstor-istgt-arm64
-        imageTag: 2.2.0
+        imageTag: 2.5.0
       volumeMgmt:
         image: openebs/cstor-volume-mgmt-arm64
-        imageTag: 2.2.0
+        imageTag: 2.5.0
     policies:
       monitoring:
         image: openebs/m-exporter-arm64
-        imageTag: 2.2.0
+        imageTag: 2.5.0
     jiva:
       image: openebs/jiva-arm64
-      imageTag: 2.2.0
+      imageTag: 2.5.0
