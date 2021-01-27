@@ -1,0 +1,17 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: loki
+  namespace: monitoring
+  annotations:
+    fluxcd.io/ignore: "false"
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: loki-stack
+  rollback:
+    enable: true
+  chart:
+    repository: https://grafana.github.io/helm-charts
+    name: loki-stack
+    version: 12.2.4
