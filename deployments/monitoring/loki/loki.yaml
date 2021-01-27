@@ -15,3 +15,6 @@ spec:
     repository: https://grafana.github.io/helm-charts
     name: loki-stack
     version: 2.3.0
+    values:
+      grafana:
+        enabled: true
