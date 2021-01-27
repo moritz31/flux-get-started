@@ -15,4 +15,5 @@ spec:
     name: kured
     version: 2.3.1
   values:
-    image.repository: quay.io/paulfantom/kured
+    image:
+      repository: quay.io/paulfantom/kured
