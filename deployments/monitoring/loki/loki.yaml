@@ -14,4 +14,3 @@ spec:
   chart:
     repository: https://grafana.github.io/helm-charts
     name: loki-stack
-    version: 12.2.4
