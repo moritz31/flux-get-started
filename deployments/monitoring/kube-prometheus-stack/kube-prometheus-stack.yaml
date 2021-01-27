@@ -14,9 +14,9 @@ spec:
   chart:
     repository: https://prometheus-community.github.io/helm-charts
     name: kube-prometheus-stack
-    version: 12.2.4
+    version: 13.3.0
   values:
     kube-state-metrics:
       image:
-        repository: k8s.gcr.io/kube-state-metrics-arm64
-        tag: v1.9.5
+        repository: eddiezane/kube-state-metrics
+        tag: v1.9.7
