@@ -18,7 +18,7 @@ spec:
   values:
     DNS1: "1.1.1.1"
     DNS2: "8.8.8.8"
-    replicaCount: 1
+    maxUnavailable: 0
     persistentVolumeClaim:
         enabled: true
         storageClass: openebs-jiva-default
@@ -39,5 +39,5 @@ spec:
           metallb.universe.tf/allow-shared-ip: pihole-svc
     dnsmasq:
       customDnsEntries:
-        - address=/prometheus.fritz/box/192.168.178.224
+        - address=/prometheus.fritz.box/192.168.178.224
     
