@@ -16,6 +16,11 @@ spec:
     name: kube-prometheus-stack
     version: 13.3.0
   values:
+    prometheus:
+      ingress:
+        enabled: true
+        hosts:
+          - "prometheus.fritz.box"
     kube-state-metrics:
       image:
         repository: eddiezane/kube-state-metrics
