@@ -26,6 +26,13 @@ spec:
         enabled: true
         hosts:
           - "alertmanager.fritz.box"
+      config:
+        receivers:
+          - name: 'null'
+            webhook_config:
+              send_resolved: true
+              url: http://home.kirstein.me:9999
+
     grafana:
       ingress:
         enabled: true
