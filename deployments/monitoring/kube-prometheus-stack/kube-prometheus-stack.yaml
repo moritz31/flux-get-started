@@ -21,6 +21,16 @@ spec:
         enabled: true
         hosts:
           - "prometheus.fritz.box"
+    alertmanager:
+      ingress:
+        enabled: true
+        hosts:
+          - "alertmanager.fritz.box"
+    grafana:
+      ingress:
+        enabled: true
+        hosts:
+          - "grafana.fritz.box"
     kube-state-metrics:
       image:
         repository: eddiezane/kube-state-metrics

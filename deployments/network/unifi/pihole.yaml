@@ -40,4 +40,6 @@ spec:
     dnsmasq:
       customDnsEntries:
         - address=/prometheus.fritz.box/192.168.178.224
+        - address=/alertmanager.fritz.box/192.168.178.224
+        - address=/grafana.fritz.box/192.168.178.224
     
