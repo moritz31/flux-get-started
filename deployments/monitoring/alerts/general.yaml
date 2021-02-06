@@ -4,7 +4,7 @@ metadata:
   labels:
     app: kube-prometheus-stack
     release: kube-prometheus-stack
-  name: prometheus-example-rules
+  name: prometheus-example.rules
   namespace: monitoring
 spec:
   groups:
