@@ -8,7 +8,7 @@ metadata:
   namespace: monitoring
 spec:
   groups:
-  - name: ./example.rules
+  - name: example.rules
     rules:
     - alert: ExampleAlert
       expr: vector(1)
