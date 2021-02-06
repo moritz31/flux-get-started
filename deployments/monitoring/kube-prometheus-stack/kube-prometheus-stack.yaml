@@ -28,7 +28,7 @@ spec:
           - "alertmanager.fritz.box"
       config:
         receivers:
-          - name: 'null'
+          - name: 'bot'
             webhook_config:
               send_resolved: true
               url: http://home.kirstein.me:9999
