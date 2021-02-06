@@ -2,8 +2,8 @@ apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:
   labels:
-    App: kube-prometheus-stack
-    Release: kube-prometheus-stack
+    app: kube-prometheus-stack
+    release: kube-prometheus-stack
   name: prometheus-example-rules
   namespace: monitoring
 spec:
