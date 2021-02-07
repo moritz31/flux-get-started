@@ -17,7 +17,7 @@ spec:
     helmOperator:
       create: false
     git:
-      url: "git@github.com:moritz31/flux-get-started"
+      url: "git@github.com:moritz31/homelab-gitops"
       branch: master
       path: namespaces,deployments
     image:
