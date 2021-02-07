@@ -46,6 +46,7 @@ spec:
       sidecar:
         dashboards:
           enabled: true
+          searchNamespace: ALL
     kube-state-metrics:
       image:
         repository: eddiezane/kube-state-metrics
