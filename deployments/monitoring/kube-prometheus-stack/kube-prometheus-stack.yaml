@@ -17,11 +17,11 @@ spec:
     version: 13.5.0
   values:
     defaultRules:
-    rules:
-      kubeControllerManager:
-        enabled: false
-      kubeScheduler:
-        enabled: false
+      rules:
+        kubeControllerManager:
+          enabled: false
+        kubeScheduler:
+          enabled: false
     prometheus:
       ingress:
         enabled: true
