@@ -1,0 +1,15 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: github-runner
+  namespace: cicd
+  annotations:
+    fluxcd.io/ignore: "false"
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: github-runner
+  helmVersion: v3
+  chart:
+    repository: https://summerwind.github.io/actions-runner-controller
+    name: actions-runner-controller
