@@ -13,7 +13,7 @@ spec:
   chart:
     repository: https://evryfs.github.io/helm-charts/
     name: github-actions-runner-operator
-    version: v0.8.6
+    version: 2.5.10
   values:
     githubapp:
       enabled: true
