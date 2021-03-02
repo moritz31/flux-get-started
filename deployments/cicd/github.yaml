@@ -2,18 +2,18 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: github-actions-runner-operator
+  name: actions-runner-controller
   namespace: cicd
   annotations:
     fluxcd.io/ignore: "false"
     fluxcd.io/automated: "true"
 spec:
-  releaseName: github-actions-runner-operator
+  releaseName: actions-runner-controller
   helmVersion: v3
   chart:
-    repository: https://evryfs.github.io/helm-charts/
-    name: github-actions-runner-operator
-    version: 2.5.10
+    repository: https://summerwind.github.io/actions-runner-controller
+    name: actions-runner-controller
+    version: 0.5.2
   values:
     githubapp:
       enabled: true
