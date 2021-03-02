@@ -14,7 +14,3 @@ spec:
     repository: https://summerwind.github.io/actions-runner-controller
     name: actions-runner-controller
     version: 0.5.2
-  values:
-    githubapp:
-      enabled: true
-      existingSecret: github-runner-app
