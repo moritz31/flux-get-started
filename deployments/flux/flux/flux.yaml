@@ -20,6 +20,7 @@ spec:
       url: "git@github.com:moritz31/homelab-gitops"
       branch: master
       path: namespaces,deployments
+      readonly: true
     image:
       repository: raspbernetes/flux
       tag: 1.21.0
