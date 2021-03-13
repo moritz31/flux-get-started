@@ -14,7 +14,7 @@ spec:
   chart:
     repository: https://mojo2600.github.io/pihole-kubernetes/
     name: pihole
-    version: 1.8.29
+    version: 1.8.30
   values:
     DNS1: "1.1.1.1"
     DNS2: "8.8.8.8"
@@ -42,4 +42,9 @@ spec:
         - address=/prometheus.fritz.box/192.168.178.224
         - address=/alertmanager.fritz.box/192.168.178.224
         - address=/grafana.fritz.box/192.168.178.224
+    monitoring:
+      podMonitor:
+        enabled: true
+      sidecar:
+        enabled: true
     
